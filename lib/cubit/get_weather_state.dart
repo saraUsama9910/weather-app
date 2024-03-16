@@ -1,4 +1,4 @@
-import 'package:weatherapp/model/weather_model.dart';
+import 'package:weatherapp/models/weather_model.dart';
 
 class WeatherState {}
 

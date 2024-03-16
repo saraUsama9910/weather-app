@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weatherapp/main.dart';
-import 'package:weatherapp/model/weather_model.dart';
+import 'package:weatherapp/models/weather_model.dart';
 
 class WeatherInfoData extends StatelessWidget {
   const WeatherInfoData({Key? key, required this.weatherModel})

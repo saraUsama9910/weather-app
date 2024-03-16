@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:weatherapp/cubits/get_weather_cubit/get_weather_cubit.dart';
+import 'package:weatherapp/cubit/get_weather_state.dart';
 import 'package:weatherapp/data/no_weather_data.dart';
-import 'package:weatherapp/cubits/get_weather_cubit/get_weather_state.dart';
 import 'package:weatherapp/data/weather_info_data.dart';
+import 'package:weatherapp/get_weather/get_weather_cubit.dart';
 import 'package:weatherapp/views/search_view.dart';
 
 class HomeView extends StatefulWidget {
@@ -49,12 +49,14 @@ class _HomeViewState extends State<HomeView> {
             );
           } else {
             return const Padding(
-              padding:  EdgeInsets.all(30),
-              child:Center(
+              padding: EdgeInsets.all(30),
+              child: Center(
                 child: Text(
                   '😔 Oops There Is An Error Please,Try Again Later!',
                   style: TextStyle(
-                      fontSize: 20, textBaseline: TextBaseline.alphabetic,),
+                    fontSize: 20,
+                    textBaseline: TextBaseline.alphabetic,
+                  ),
                 ),
               ),
             );
