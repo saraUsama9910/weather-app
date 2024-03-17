@@ -43,7 +43,6 @@ class _HomeViewState extends State<HomeView> {
           if (state is WeatherInitialState) {
             return const NoWeatherData();
           } else if (state is WeatherLoadedState) {
-            // ignore: prefer_const_constructors
             return WeatherInfoData(
               weatherModel: state.weatherModel,
             );
