@@ -13,3 +13,4 @@ class WeatherFailureState extends WeatherState {
   final String errormessage;
   WeatherFailureState({required this.errormessage});
 }
+
